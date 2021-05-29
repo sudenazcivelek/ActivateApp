@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>SpeedySloth WatchKit Extension</string>
+	<string>MyWorkouts WatchKit App</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -20,27 +20,12 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>NSExtension</key>
-	<dict>
-		<key>NSExtensionAttributes</key>
-		<dict>
-			<key>WKAppBundleIdentifier</key>
-			<string>com.example.apple-samplecode.SpeedySloth.watchkitapp</string>
-		</dict>
-		<key>NSExtensionPointIdentifier</key>
-		<string>com.apple.watchkit</string>
-	</dict>
-	<key>NSHealthShareUsageDescription</key>
-	<string>Your workout related data will be used to display your saved workouts in SpeedySloth.</string>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>Workouts tracked by SpeedySloth on Apple Watch will be saved to HealthKit.</string>
-	<key>UIBackgroundModes</key>
-	<array/>
-	<key>WKBackgroundModes</key>
+	<key>UISupportedInterfaceOrientations</key>
 	<array>
-		<string>workout-processing</string>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
-	<key>WKWatchOnly</key>
+	<key>WKWatchKitApp</key>
 	<true/>
 </dict>
 </plist>
