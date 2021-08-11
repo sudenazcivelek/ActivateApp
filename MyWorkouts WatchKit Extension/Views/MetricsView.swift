@@ -17,7 +17,7 @@ struct MetricsView: View {
                 ElapsedTimeView(elapsedTime: workoutManager.builder?.elapsedTime ?? 0, showSubseconds: context.cadence == .live)
                     .foregroundStyle(.yellow)
                 Text(Measurement(value: workoutManager.activeEnergy, unit: UnitEnergy.kilocalories)
-                        .formatted(.measurement(width: .abbreviated, usage: .workout, numberFormat: .numeric(precision: .fractionLength(0)))))
+                        .formatted(.measurement(width: .abbreviated, usage: .workout, numberFormatStyle: .number.precision(.fractionLength(0)))))
                 Text(workoutManager.heartRate.formatted(.number.precision(.fractionLength(0))) + " bpm")
                 Text(Measurement(value: workoutManager.distance, unit: UnitLength.meters).formatted(.measurement(width: .abbreviated, usage: .road)))
             }
